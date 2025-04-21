@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reconocimiento de Dígitos</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>🧠 Reconocimiento de Dígitos</h1>
+
+    <h2>🎯 Número objetivo: <span id="objetivo">----</span></h2>
+    <p id="progreso">Progreso: <span id="avance">0</span>/4</p>
+
+    <canvas id="canvas" width="280" height="280" style="border:1px solid black;"></canvas>
+
+    <div style="margin-top: 10px;">
+        <button onclick="generarNumeroObjetivo()">🎲 Generar número aleatorio</button>
+        <button onclick="clearCanvas()">🧼 Limpiar</button>
+        <button onclick="enviarImagen()">📤 Predecir</button>
+    </div>
+
+    <h2 id="resultado">Resultado: </h2>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
