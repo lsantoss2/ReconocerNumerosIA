@@ -69,7 +69,7 @@ def predecir():
         final = Image.fromarray(canvas).resize((28, 28))
 
         # (Opcional) Guardar imagen procesada para depuración
-        final.save(os.path.join(BASE_DIR, "ver_dibujo.png"))
+        # final.save(os.path.join(BASE_DIR, "ver_dibujo.png")) VALIDO PARA PRUEBAS EN LOCAL
 
         # Preparar imagen para el modelo
         entrada = np.array(final) / 255.0
